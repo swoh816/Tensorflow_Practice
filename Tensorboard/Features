@@ -1,0 +1,6 @@
+# Save the session graph to a directory
+writer = tf.summary.FileWriter("./add_graph")
+writer.add_graph(sess.graph)
+
+# Convert the TARGET_DIRECTORY to a tensorboard object.
+tensorboard --logdir TARGET_DIRECTORY
